@@ -1,0 +1,25 @@
+development:
+      host: localhost
+      adapter: mysql
+      database: login_db2
+      port: 3306
+      username: root
+      password: root
+
+test: &test
+      host: localhost
+      adapter: mysql
+      database: login_test
+      port: 3306
+      username: root
+      password: root
+
+production:
+      host: localhost
+      adapter: mysql
+      database: login_db2
+      port: 3306
+      username: root
+      password: root
+cucumber:
+  <<: *test
